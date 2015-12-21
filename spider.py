@@ -8,13 +8,11 @@ import getopt
 import logging
 import urllib2
 import webbrowser
-from pyh import *
 
 URL = "http://news-at.zhihu.com/api/4/news/"
-PATH_HTML = "/Users/wangyujie/Desktop/1.html"
-PATH_TXT = "/Users/wangyujie/Desktop/1.txt"
+PATH_HTML = "/Users/wangyujie/Desktop/spider.html"
+PATH_TXT = "/Users/wangyujie/Desktop/page.txt"
 logger = logging.getLogger(__name__)
-Header = ""
 
 def get_news_latest():
     try:
