@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<style type="text/css">
+			.main-wrap {
+			  max-width: 600px;
+			  min-width: 300px;
+			  margin: 0 auto;
+			}
+
+			.content-wrap {
+			  overflow: hidden;
+			  background-color: #fff;
+			}
+			.content-wrap a {
+			  word-break: break-all;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+		var txt = zhihuribao;
+
+		// obj = JSON.parse(txt);
+		
+		for (var i=0;i<46;i++)
+		{
+			document.write("<h5>"+txt.stories[i].title+"</h5>")
+			document.write(txt.stories[i].body)
+			document.write("<img src="+txt.stories[i].images+">")
+			document.write("<a href='http://daily.zhihu.com/story/"+txt.stories[i].id+"'>www.lianjie.com</a>")
+		} 
+		</script>
+	</body>
+</html>
