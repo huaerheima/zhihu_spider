@@ -46,7 +46,6 @@ if __name__=="__main__":
     news_latest = get_news_latest()
     news_latest = get_stories_to_news(news_latest)
     add_news_to_html(news_latest)
-    print news_latest
     webbrowser.open_new_tab("file:///Users/wangyujie/Desktop/1.html")
 
 
